@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Hero
+
+@admin.register(Hero)
+class HeroAdmin(admin.ModelAdmin):
+    pass

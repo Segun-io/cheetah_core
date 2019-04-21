@@ -1,3 +1,4 @@
-from django.db import models
+from core.models import ValveDataAbstract
 
-# Create your models here.
+class Unit(ValveDataAbstract):
+    pass

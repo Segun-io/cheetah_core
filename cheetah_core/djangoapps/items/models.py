@@ -1,3 +1,6 @@
 from django.db import models
+from core.models import ValveDataAbstract
 
-# Create your models here.
+class Item(ValveDataAbstract):
+    is_recipe = models.BooleanField('Is item recipe?', default=False)
+    cost = models.PositiveIntegerField('Item cost', default=0)

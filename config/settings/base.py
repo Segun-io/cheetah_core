@@ -71,7 +71,12 @@ THIRD_PARTY_APPS = [
     'absoluteuri'
 ]
 LOCAL_APPS = [
-    "users",
+    'users',
+    'core',
+    'heroes',
+    'items',
+    'units'
+
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
