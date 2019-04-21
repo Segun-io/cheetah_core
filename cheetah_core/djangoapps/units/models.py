@@ -1,4 +1,6 @@
+from django.db import models
+
 from core.models import ValveDataAbstract
 
 class Unit(ValveDataAbstract):
-    pass
+    wiki_image = models.CharField('Wiki image name', max_length=128)

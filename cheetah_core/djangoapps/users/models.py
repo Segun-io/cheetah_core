@@ -39,7 +39,7 @@ class UserKey(models.Model):
 
 class UserKeyUsage(models.Model):
     uuid = ShortUUIDField(primary_key=True)
-    userkey = models.ForeignKey(
+    user_key = models.ForeignKey(
         'UserKey', on_delete=models.CASCADE)
     date = models.DateField('Date')
     requests = models.PositiveIntegerField('Requests', default=0)
