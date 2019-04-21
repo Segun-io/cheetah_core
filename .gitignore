@@ -283,5 +283,6 @@ cheetah_core/media/
 
 .pytest_cache/
 
+legacy_fixtures/
 
 *.sqlite3
