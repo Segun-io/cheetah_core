@@ -74,3 +74,12 @@ MIDDLEWARE += [
 ]
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+"""
+Let us populate heroes and items every 10 days because VALVe releases
+heroes and items frequently
+"""
+CRONJOBS = [
+    ('0 0 */10 * *', 'core.cron.populate_heroes'),
+    ('0 0 */10 * *', 'core.cron.populate_heroes'),
+]
